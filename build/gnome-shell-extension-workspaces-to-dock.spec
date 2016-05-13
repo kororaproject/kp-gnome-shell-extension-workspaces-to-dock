@@ -1,9 +1,9 @@
 %global uuid workspaces-to-dock@passingthru67.gmail.com
-%global gittag 04da5d6b97e73b35fd20e18eeddb5b7be8ca5fb6
-%global gitshorttag 04da5d6
+%global gittag 61261e4b8ed37208128e9284163cf041dbfd5dc2
+%global gitshorttag 61261e4
 
 Name:           gnome-shell-extension-workspaces-to-dock
-Version:        0.24
+Version:        0.36
 Release:        1.git%{gitshorttag}%{?dist}
 Summary:        A workspace dock for the GNOME Shell
 
@@ -13,7 +13,7 @@ Source0:        https://github.com/passingthru67/workspaces-to-dock/archive/%{gi
 
 BuildRequires:  unzip
 
-Requires:       gnome-shell >= 3.14.0
+Requires:       gnome-shell >= 3.20.0
 Requires(post): glib2
 
 
@@ -44,5 +44,8 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas/ 2>/dev/null
 %{_datadir}/gnome-shell/extensions/%{uuid}/
 
 %changelog
+* Fri May 13 2016 Chris Smart <csmart@kororproject.org> - 0.36-1.git61261e4
+- Update to support GNOME 3.20
+
 * Thu Jan  8 2015 Ian Firns <firnsy@kororproject.org> - 0.24-1.git04da5d6
 - Initial package for Korora
