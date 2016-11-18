@@ -1,9 +1,11 @@
 %global uuid workspaces-to-dock@passingthru67.gmail.com
-%global gittag 61261e4b8ed37208128e9284163cf041dbfd5dc2
-%global gitshorttag 61261e4
+#%global gittag 61261e4b8ed37208128e9284163cf041dbfd5dc2
+#%global gitshorttag 61261e4
+%global gittag 70ce08ce323b14d42254bf834ac5c49be4240387
+%global gitshorttag 70ce08c
 
 Name:           gnome-shell-extension-workspaces-to-dock
-Version:        0.36
+Version:        0.40
 Release:        1.git%{gitshorttag}%{?dist}
 Summary:        A workspace dock for the GNOME Shell
 
@@ -44,6 +46,9 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas/ 2>/dev/null
 %{_datadir}/gnome-shell/extensions/%{uuid}/
 
 %changelog
+* Fri Nov 18 2016 Chris Smart <csmart@kororproject.org> - 0.40-1.git70ce08c
+- Update to 0.40, support GNOME 3.22
+
 * Fri May 13 2016 Chris Smart <csmart@kororproject.org> - 0.36-1.git61261e4
 - Update to support GNOME 3.20
 
